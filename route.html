@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="css/route.css?v1.0" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div id="routePage" class="page overflow-hidden">
+        <!--<nav class="page-nav horizontal bg-grey-darken-4 shadow">
+            <div id="studentsGridFilters" class="toolbar">
+                <div class="filterList">
+                    <div class="group float-left" data-id='lines'>
+                        <div class="input no-margin-right">
+                            <select id="linesMultiselect" multiple="multiple" class=""></select>
+                        </div>
+                    </div>
+
+                    <div class="group no-padding no-border float-left" data-id='prType'>
+                        <div class="input no-margin-right">
+                            <ul id="selectPR" class="km-buttongroup horizontal">
+                                <li data-value="IN">PR In</li>
+                                <li data-value="OUT">PR Out</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="goBtnGroup" class="group float-left no-padding no-border">
+                        <button id="getstudentsBtn" class="o-btn bg-shades-transparent bg-hover-pg-darkblue bg-active-pg-darkblue text-white">
+                            <span class="o-btn-text font-size-14 font-weight-200"><i class="mdi mdi-send"></i>&nbsp;<span class="hide-max-width-1024">Get Data</span></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="clr"></div>
+            </div>
+        </nav>-->
+
+        <div class="headerShadow"></div>
+
+        <nav class="customNav">
+            <button id="mapViewBtn" class="menu-btn float-left o-btn no-padding-left">
+                <i class="o-btn-icon mdi mdi-map"></i>
+                <span class="o-btn-text nmFontFamily">Mapa</span>
+            </button>
+            <button id="listViewBtn" class="menu-btn float-left o-btn no-padding-left">
+                <i class="o-btn-icon mdi mdi-format-list-bulleted"></i>
+                <span class="o-btn-text nmFontFamily">Lista</span>
+            </button>
+        </nav>
+
+        <div id="routeMapContainer" class="page-view overflow-hidden disable-user-select bg-white font-size-12">
+            <div id="mapRoute" class=""></div>
+        </div>
+        <div id="routeListContainer" class="page-view overflow-auto disable-user-select bg-white font-size-12">
+            <div id="listPanelBar">
+                <article class="no-border-h no-border-top">
+                    <h1 class="nmFontFamily"><i class="mdi mdi-bank"></i>&nbsp; Museo Nativista Héctor Aubert</h1>
+                    <p>El Museo posee tres salones auditorios, una pulpería, una capilla que venera a la Virgen de Luján y un anfiteatro al aire libre.</p>
+                    <p>Exhibe una de las colecciones más completas de carruajes y vehículos de tracción a sangre.</p>
+                    <p>Posee uno de los 3 bustos existentes en el mundo de Molina Campos.</p>
+                    <p>En el museo hay una completa colección de herramientas agrícolas originales y en excelente estado que utilizaban en el siglo XIX.</p>
+                    <p>La pulpería "Doña Esterofilda" es la última que hubo en la provincia de San Luis y en su interior se encuentra adornada con artículos de época, como envases de bebidas, recuerdos y una victrola.</p>
+                    <p>Es un museo privado que fue declarado de interés municipal, provincial, nacional e internacional por la UNESCO.</p>
+
+                    <ul class="fa-ul font-size-14">
+                        <li><i class="fa-li mdi mdi-map-marker"></i>Las Heras 100</li>
+                        <li><i class="fa-li mdi mdi-clock"></i>20.00</li>
+                        <li><i class="fa-li mdi mdi-presentation"></i>A las 20hs se realizará el Acto de Apertura a cargo de las autoridades municipales y de la Universidad Nacional de Villa Mercedes.</li>
+                        <li><i class="fa-li mdi mdi-music-note"></i>Actuación del Ensamble UNViMe "Moai"</li>
+                    </ul>
+                </article>
+
+                <article class="no-border-h no-border-top">
+                    <h1 class="nmFontFamily"><i class="mdi mdi-bank"></i>&nbsp; Museo Santiago Betbeder</h1>
+                    <p>Guarda las antiguas estatuas de mármol de la Plaza Pedernera, las rejas de la casa de Betbeder y elementos pertenecientes a la sociedad de distintas épocas. Entre sus más preciados tesoros donados se encuentran las guitarras de los autores de la canción “La Calle Angosta”, donadas por los familiares de José Zabala, Héctor Montenegro, Rodolfo Bianchi, Alfredo Alfonso y Félix Máximo María. También las fotos del antiguo mercado que se ubicaba donde hoy se encuentran el museo, en Urquiza y Balcarce.</p>
+                    <ul class="fa-ul font-size-14">
+                        <li><i class="fa-li mdi mdi-map-marker"></i>Belgrano 194</li>
+                        <li><i class="fa-li mdi mdi-clock"></i>20.45</li>
+                        <li><i class="fa-li mdi mdi-presentation"></i>Referencia Histórica de la Manzana N° 1 de la Ciudad, el Archivo Municipal, el Museo Santiago Betbeder y el Museo del Padre Miranda.</li>
+                        <li><i class="fa-li mdi mdi-music-note"></i>Intervención Artística Musical a cargo de Valle Del Castillo</li>
+                    </ul>
+                </article>
+
+                <article class="no-border-h no-border-top">
+                    <h1 class="nmFontFamily"><i class="mdi mdi-church"></i>&nbsp; Parroquia Ntra. Sra. de la Merced</h1>
+                    <p></p>
+                    <ul class="fa-ul font-size-14">
+                        <li><i class="fa-li mdi mdi-map-marker"></i>Pedernera 264</li>
+                        <li><i class="fa-li mdi mdi-clock"></i>21.15</li>
+                        <li><i class="fa-li mdi mdi-presentation"></i>Referencia Histórica de la Parroquia y su arquitectura.</li>
+                    </ul>
+                </article>
+
+                <article class="no-border-h no-border-top">
+                    <h1 class="nmFontFamily"><i class="mdi mdi-bank"></i>&nbsp; Museo Ferroviario</h1>
+                    <p>En su interior se recrea una estación de trenes, y está instalada una maqueta de 80 metros de largo y más de 600 metros de vías, en donde expertos ferromodelistas, que a la vez son fundadores y encargados del Museo, deleitan a los visitantes con las maniobras realizadas por las formaciones de vagones de manera casi real con las verdaderas.</p>
+                    <ul class="fa-ul font-size-14">
+                        <li><i class="fa-li mdi mdi-map-marker"></i>Aviador Origone y General Paz</li>
+                        <li><i class="fa-li mdi mdi-clock"></i>21.45</li>
+                        <li><i class="fa-li mdi mdi-presentation"></i>Demostración del funcionamiento de la Maqueta Ferroviaria a cargo de sus creadores y exposición de objetos de valor histórico y cultural relacionados con los Ferrocarriles Argentinos.</li>
+                    </ul>
+                </article>
+
+                <article class="no-border-h no-border-top">
+                    <h1 class="nmFontFamily"><i class="mdi mdi-bank"></i>&nbsp; Municipalidad de Villa Mercedes</h1>
+                    <p></p>
+                    <ul class="fa-ul font-size-14">
+                        <li><i class="fa-li mdi mdi-map-marker"></i>Avenida Mitre 1100</li>
+                        <li><i class="fa-li mdi mdi-clock"></i>22.35</li>
+                        <li><i class="fa-li mdi mdi-presentation"></i>Referencia Histórica del Edificio Municipal. Exposición de autos antiguos sobre la fachada del edificio municipal.</li>
+                    </ul>
+                </article>
+
+                <article class="no-border-h no-border-top">
+                    <h1 class="nmFontFamily"><i class="mdi mdi-bank"></i>&nbsp; Casa de la Cultura</h1>
+                    <p></p>
+                    <ul class="fa-ul font-size-14">
+                        <li><i class="fa-li mdi mdi-map-marker"></i>Avenida Mitre 1100</li>
+                        <li><i class="fa-li mdi mdi-clock"></i>23.00</li>
+                        <li><i class="fa-li mdi mdi-image"></i>En el salón principal, sobre el Pasillo Sur, se expondrá una muestra compuesta por gran parte del patrimonio plástico del que dispone la Casa de la Cultura organizado en una línea temporal haciendo un paralelismo con las obras de maestros de la pintura, el dibujo y el grabado de carácter y renombre nacional.</li>
+                        <li><i class="fa-li mdi mdi-book-open-page-variant"></i>Sobre el pasillo Norte podremos apreciar una muestra compuesta por un gran compendio de obras gráficas de distintos autores del medio del cómic y la historieta que fueran expuestas y adquiridas en las diferentes ediciones de la Feria Nacional del Libro de Villa Mercedes.</li>
+                        <li><i class="fa-li mdi mdi-projector"></i>En la explanada de la Plaza del Sesquicentenario, la UNViMe participará haciendo una muestra audiovisual de los trabajos desarrollados por los alumnos de la Tecnicatura en Diseño de Comunicación. Acompañarán dicha muestra audiovisual trabajos realizados en el marco del Festival Nacional de Cortometrajes de Villa Mercedes.</li>
+                        <li><i class="fa-li mdi mdi-camera"></i>Sobre los locales con vista a la calle Urquiza se podrá apreciar una muestra fotográfica a cargo de Marina Lara y sus alumnos de Mi Espacio Música e Imagen.</li>
+                        <li><i class="fa-li mdi mdi-presentation"></i>En la biblioteca Juan Bautista Alberdi se podrá apreciar una colección de objetos antiguos religiosos, culturales, indígenas, educativos y domésticos de los Museos pertenecientes al Municipio de San José del Morro.</li>
+                        <li><i class="fa-li mdi mdi-brush"></i>En la sala de lectura de la Biblioteca Juan Bautista Alberdi se podrá apreciar una muestra compuesta por parte de la colección de la pintora María Cristina Pastor.</li>
+                        <li><i class="fa-li mdi mdi-brush"></i>En la sala Benarós, la prestigiosa profesora de arte Gabriela Pedernera expondrá parte de su colección de cuadros.</li>
+                        <li><i class="fa-li mdi mdi-music-note"></i>Intervención Artística Musical a cargo de Pentagrama, Matías Chaín y Natalia Dejoux.</li>
+                    </ul>
+                </article>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- #region Page JS -->
+    <script src="js/route.min.js?v1.1"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70674159-4', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+    <!-- #endregion -->
+
+</body>
+</html>

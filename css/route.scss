@@ -1,0 +1,153 @@
+﻿@charset "UTF-8";
+
+@import "modules/_functions.scss";
+@import "modules/_color.scss";
+@import "modules/_mixins.scss";
+
+@import "modules/_variables.scss";
+
+#routePage {
+    .headerShadow {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: -0.5rem;
+        right: 0;
+        height: 6rem;
+        transform-origin: top left;
+        transform: rotate(-2deg);
+        background: rgba(0,16,50,0.9);
+        box-shadow: 0 0 3rem 0.5rem rgba(0,0,0,0.5);
+    }
+
+    nav.customNav {
+        position: absolute;
+        top: 6rem;
+        left: -0.5rem;
+        right: 0;
+        z-index: 99;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0rem 1rem 1rem -1rem rgba(0,0,0,0.5);
+        transform-origin: top left;
+        transform: rotate(-2.5deg);
+        padding: 0 0 0 1rem;
+
+        > button {
+            background: transparent;
+            transition: 0.3s all;
+
+            &:hover {
+                background: rgba(255,255,255,0.5);
+            }
+
+            &.active {
+                border-bottom: 0.5rem solid #001032;
+                box-shadow: none;
+            }
+        }
+    }
+
+    #routeListContainer {
+        padding: 12rem 1rem;
+
+        #listPanelBar {
+            > article {
+                border: 0.1rem solid #ccc;
+                padding: 1rem;
+
+                > h1 {
+                    font-size: 3rem;
+
+                }
+                > p {
+                    font-size: 1.4rem;
+                    max-width: 50rem;
+                }
+                > ul {
+                    font-size: 1.4rem;
+                    max-width: 50rem;
+                }
+            }
+        }
+    }
+
+    div#mapRoute {
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-marker.k-marker-nm-pin {
+        background: transparent;
+        border: 0.5rem solid #001032;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        margin: -5rem 0 0 -1.5rem;
+        box-sizing: border-box;
+
+        &:before {
+            position: absolute;
+            content: '';
+            bottom: -2rem;
+            border: 1rem solid transparent;
+            border-top: 1rem solid #001032;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            background: none;
+            width: 2rem;
+            height: 2rem;
+            line-height: 1.6rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: "IM Fell DW Pica",serif;
+            background: rgba(255,255,255,0.8);
+            border-radius: 50%;
+        }
+
+        &.pin-1:after {
+            content: '1';
+        }
+
+        &.pin-2:after {
+            content: '2';
+        }
+
+        &.pin-3:after {
+            content: '3';
+        }
+
+        &.pin-4:after {
+            content: '4';
+        }
+
+        &.pin-5:after {
+            content: '5';
+        }
+
+        &.pin-6:after {
+            content: '6';
+            line-height: 1.8rem;
+        }
+    }
+}
+
+/*#region Media Queries*/
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (min-width: 769px) {
+    
+}
+
+/*#endregion*/
+
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+}

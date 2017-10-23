@@ -1,0 +1,96 @@
+﻿#routePage .headerShadow {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: -0.5rem;
+  right: 0;
+  height: 6rem;
+  transform-origin: top left;
+  transform: rotate(-2deg);
+  background: rgba(0, 16, 50, 0.9);
+  box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.5); }
+
+#routePage nav.customNav {
+  position: absolute;
+  top: 6rem;
+  left: -0.5rem;
+  right: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.5);
+  transform-origin: top left;
+  transform: rotate(-2.5deg);
+  padding: 0 0 0 1rem; }
+  #routePage nav.customNav > button {
+    background: transparent;
+    transition: 0.3s all; }
+    #routePage nav.customNav > button:hover {
+      background: rgba(255, 255, 255, 0.5); }
+    #routePage nav.customNav > button.active {
+      border-bottom: 0.5rem solid #001032;
+      box-shadow: none; }
+
+#routePage #routeListContainer {
+  padding: 12rem 1rem; }
+  #routePage #routeListContainer #listPanelBar > article {
+    border: 0.1rem solid #ccc;
+    padding: 1rem; }
+    #routePage #routeListContainer #listPanelBar > article > h1 {
+      font-size: 3rem; }
+    #routePage #routeListContainer #listPanelBar > article > p {
+      font-size: 1.4rem;
+      max-width: 50rem; }
+    #routePage #routeListContainer #listPanelBar > article > ul {
+      font-size: 1.4rem;
+      max-width: 50rem; }
+
+#routePage div#mapRoute {
+  width: 100%;
+  height: 100%; }
+
+#routePage .k-marker.k-marker-nm-pin {
+  background: transparent;
+  border: 0.5rem solid #001032;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin: -5rem 0 0 -1.5rem;
+  box-sizing: border-box; }
+  #routePage .k-marker.k-marker-nm-pin:before {
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    border: 1rem solid transparent;
+    border-top: 1rem solid #001032; }
+  #routePage .k-marker.k-marker-nm-pin:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: none;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "IM Fell DW Pica",serif;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%; }
+  #routePage .k-marker.k-marker-nm-pin.pin-1:after {
+    content: '1'; }
+  #routePage .k-marker.k-marker-nm-pin.pin-2:after {
+    content: '2'; }
+  #routePage .k-marker.k-marker-nm-pin.pin-3:after {
+    content: '3'; }
+  #routePage .k-marker.k-marker-nm-pin.pin-4:after {
+    content: '4'; }
+  #routePage .k-marker.k-marker-nm-pin.pin-5:after {
+    content: '5'; }
+  #routePage .k-marker.k-marker-nm-pin.pin-6:after {
+    content: '6';
+    line-height: 1.8rem; }
+
+/*#region Media Queries*/
+/*#endregion*/
+
